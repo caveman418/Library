@@ -11,10 +11,26 @@
 <body>
     <div class="header">
         <div class="title">Library</div>
-        <button type="button" class="log-in">Log in</button>
+        <button type="button" class="large log-in">Sign in</button>
     </div>
     <div class="main">
-        
+        <button type="button" class="large add-book">Add book</button>
+        <table class="container">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>The Hunger Games</td>
+                <td>Suzanne Collins</td>
+                <td>374</td>
+                <td><button type="button" class="small status" id="read-book-1">READ</button></td>
+                <td><button type="button" class="small delete" id="delete-book-1">DELETE</button></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
