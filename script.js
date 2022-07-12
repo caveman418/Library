@@ -1,3 +1,5 @@
+let myLibrary = [];
+
 class Book {
     constructor(title, author, pages, read) {
         this.title = title;
@@ -11,7 +13,9 @@ class Book {
     }
 }
 
-const hungerGames = new Book('The Hunger Games', 'Suzanna Collins', 374, true);
+function addBookToLibrary() {
+    
+}
 
-console.log(hungerGames);
-console.log(hungerGames.info());
+
+// const hungerGames = new Book('The Hunger Games', 'Suzanna Collins', 374, true);
