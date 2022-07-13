@@ -51,7 +51,7 @@ body {
 }
 
 
-/* button stylein */
+/* button styling */
 
 button {
     cursor: pointer;
@@ -153,6 +153,7 @@ tr:nth-child(even) {
 	height: 500px;
 	width: 300px;
 	background-color: var(--main-color);
+    border-radius: 0.75rem;
 }
 
 .form-container {
@@ -160,6 +161,10 @@ tr:nth-child(even) {
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+}
+
+form button {
+    border-radius: 0.25rem;
 }
 
 label {
