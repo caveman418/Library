@@ -27,7 +27,7 @@ body {
 
 .header {
     background-color: var(--header-color);
-    height: 10%;
+    height: 75px;
     width: 100%;
     box-shadow: 0 10px 10px rgb(230, 230, 230);
     z-index: 1;
@@ -56,6 +56,11 @@ body {
 button {
     cursor: pointer;
     border: none;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity: 1;
 }
 
 button.large {
@@ -72,32 +77,44 @@ button.large:hover {
 }
 
 button.small {
-    height: 2rem;
-    width: 6rem;
+    height: 3rem;
+    width: 8rem;
     font-size: 0.9rem;
     border-radius: 0.25rem;
 }
 
 button.status {
-    background-color: rgb(102, 255, 102);
+    background-color: rgb(255, 251, 0);
 }
 
-button.delete {
+button.delete, button.exit {
     background-color: rgb(255, 87, 87);
     color: white;
 }
 
+button.complete {
+	background-color: rgb(102, 255, 102);
+}
+
+button.submit {
+	background-color: rgb(108, 108, 255);
+	color: white;
+}
+
+form button {
+	padding: .2rem 1rem;
+	font-size: 1.2rem;
+}
 
 /* table styling */
 
 table {
-    width: 1000px;
+    width: 1200px;
     border-collapse: collapse;
 }
 
 table, th {
     text-align: start;
-    border-bottom: 1px solid rgb(201, 201, 201);
 }
 
 th {
@@ -105,9 +122,51 @@ th {
 }
 
 td {
-    height: 3rem;
+    height: 4rem;
+	border-top: 1px solid rgb(201, 201, 201);
+	border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+td:nth-child(4) {
+	width: 8ch;
+}
+
+td:nth-child(5), td:nth-child(6) {
+    text-align: center;
 }
 
 tr:nth-child(even) {
     background-color: var(--header-color);
+}
+
+
+/* form styling */
+
+.form-popup {
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid black;
+	z-index: 2;
+	height: 500px;
+	width: 300px;
+	background-color: var(--main-color);
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	font-size: 1.1rem;
+	padding: 5px;
 }
