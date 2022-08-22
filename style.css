@@ -177,3 +177,15 @@ input {
 	font-size: 1.1rem;
 	padding: 5px;
 }
+
+input:focus {
+    outline: none;
+}
+
+input:invalid {
+    border: 3px solid pink;
+}
+
+input:valid {
+    border: 3px solid greenyellow;
+}

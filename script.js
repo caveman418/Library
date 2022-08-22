@@ -21,10 +21,16 @@ addBookButton.addEventListener('mousedown', () => openForm());
 
 exitNewBook.addEventListener('mousedown', () => closeForm());
 
-confirmNewBook.addEventListener('mousedown', () => {
-	addBookToLibrary();
-	createTable(myLibrary);
-	closeForm();
+confirmNewBook.addEventListener('click', (e) => {
+	const form = document.querySelector('form');
+
+	if (form.checkValidity()) {
+		addBookToLibrary();
+		createTable(myLibrary);
+		closeForm();
+	} else {
+		e.preventDefault();
+	}
 });
 
 function addBookToLibrary() {
