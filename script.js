@@ -93,8 +93,3 @@ function closeForm() {
 }
 
 createTable(myLibrary); //run function once to display default books when page is loaded
-
-
-
-
-//when revisiting this project add an animation to the 'add book' popup (you may need to completely rework the popup)
